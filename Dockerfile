@@ -11,7 +11,6 @@ RUN apk update && apk add tzdata && ln -sf /usr/share/zoneinfo/Asia/Shanghai /et
 WORKDIR /root/
 COPY ./xueqiu-notifier .
 
-EXPOSE 1325
 ENTRYPOINT ["./xueqiu-notifier"]
 
 #docker build -t xueqiu-notifier .
