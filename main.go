@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-var ConfigTargets = GetEvnWithDefaultVal("CONFIG_TARGETS", "600030,50.5|300750,200")
+var ConfigTargets = GetEvnWithDefaultVal("CONFIG_TARGETS", "600030,50.5|300750,200|TSLA,600")
 
 const MaxInformCount = 5
 
