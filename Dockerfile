@@ -1,4 +1,4 @@
-#build: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -a -o notification .
+#build: CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-s -w" -a -o xueqiu-notifier .
 
 # If you need SSL certificates for HTTPS, replace `FROM SCRATCH` with:
 #
@@ -9,12 +9,12 @@ RUN apk update && apk add tzdata && ln -sf /usr/share/zoneinfo/Asia/Shanghai /et
 #
 # FROM scratch
 WORKDIR /root/
-COPY ./wechat-inform .
+COPY ./xueqiu-notifier .
 
 EXPOSE 1325
-ENTRYPOINT ["./wechat-inform"]
+ENTRYPOINT ["./xueqiu-notifier"]
 
-#docker build -t wechat-inform .
+#docker build -t xueqiu-notifier .
 #docker-compose build
 #docker-compose push
 #docker-compose up

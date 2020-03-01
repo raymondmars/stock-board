@@ -1,4 +1,4 @@
-module wechat-inform
+module xueqiu-notifier
 
 go 1.13
 
