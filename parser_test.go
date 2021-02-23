@@ -15,7 +15,7 @@ func TestSymbol(t *testing.T) {
 
 func TestGetPrice(t *testing.T) {
 	cookies := _getCookies()
-	fmt.Println(GetQuoteData("600030", cookies))
-	fmt.Println(GetQuoteData("300750", cookies))
-	fmt.Println(GetQuoteData("00005", cookies))
+	fmt.Println(GetQuoteData("600036", cookies))
+	fmt.Println(GetQuoteData("03690", cookies))
+	fmt.Println(GetQuoteData("01810", cookies))
 }

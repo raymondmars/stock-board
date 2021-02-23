@@ -8,6 +8,8 @@ type Quote struct {
 	Name    string  `json:"name"`
 	Symbol  string  `json:"symbol"`
 	Current float64 `json:"current"`
+	Change  float64 `json:"chg"`
+	Percent float64 `json:"percent"`
 }
 type Data struct {
 	Market `json:"market"`

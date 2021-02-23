@@ -112,7 +112,7 @@ func GetQuoteData(code string, cookies []*http.Cookie) *Data {
 
 //将普通股票代码转换成雪球可以识别的代码
 func _getSymbolCode(code string) string {
-	if len(code) > 5 {
+	if len(code) > 5 && code != "SH000001" {
 		firstChar := code[:1]
 		if firstChar == "5" || firstChar == "6" || firstChar == "9" {
 			return fmt.Sprintf("SH%s", code)
