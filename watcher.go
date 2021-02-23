@@ -33,9 +33,7 @@ func (w *Watcher) Run(symbols []string, interval int64) {
 		select {
 		case <-ticker.C:
 			hour := time.Now().Hour()
-			fmt.Println(hour)
 			if hour >= 0 {
-				fmt.Println("ok")
 				cookies := _getCookies()
 				var wg sync.WaitGroup
 				// var dataChannel = make(chan *Data, len(symbols))
