@@ -68,12 +68,12 @@ func (w *Watcher) Run(symbols []string, interval int64) {
 					}
 
 					if item.Change > 0 {
-						data = append(data, []string{fmt.Sprintf("%d", i+1), item.Name, status, red(fmt.Sprintf("↑ +%.2f%% (%.2f)", item.Percent, item.Current))})
+						data = append(data, []string{fmt.Sprintf("%d", i+1), item.Name, item.Exchange, status, red(fmt.Sprintf("↑ +%.2f%% (%.2f)", item.Percent, item.Current))})
 					} else {
 						if item.Change < 0 {
-							data = append(data, []string{fmt.Sprintf("%d", i+1), item.Name, status, green(fmt.Sprintf("↓ %.2f%% (%.2f)", item.Percent, item.Current))})
+							data = append(data, []string{fmt.Sprintf("%d", i+1), item.Name, item.Exchange, status, green(fmt.Sprintf("↓ %.2f%% (%.2f)", item.Percent, item.Current))})
 						} else {
-							data = append(data, []string{fmt.Sprintf("%d", i+1), item.Name, status, fmt.Sprintf("%.2f", item.Current)})
+							data = append(data, []string{fmt.Sprintf("%d", i+1), item.Name, item.Exchange, status, fmt.Sprintf("%.2f", item.Current)})
 						}
 					}
 
@@ -81,7 +81,7 @@ func (w *Watcher) Run(symbols []string, interval int64) {
 				ClearScreen()
 				fmt.Println(time.Now().Format("2006-01-02 15:04"))
 				table := tablewriter.NewWriter(os.Stdout)
-				table.SetHeader([]string{"No", "Name", "", ""})
+				table.SetHeader([]string{"No", "Name", "ExG", "", ""})
 				table.SetAutoWrapText(false)
 				table.SetAutoFormatHeaders(true)
 				table.SetHeaderAlignment(tablewriter.ALIGN_LEFT)
