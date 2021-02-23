@@ -1,0 +1,78 @@
+{
+  "data": {
+      "market": {
+          "status_id": 5,
+          "region": "HK",
+          "status": "交易中",
+          "time_zone": "Asia/Shanghai",
+          "time_zone_desc": null
+      },
+      "quote": {
+          "symbol": "03690",
+          "high52w": 229.2,
+          "delayed": 0,
+          "type": 30,
+          "tick_size": 0.2,
+          "float_shares": 5141887288,
+          "high": 220.6,
+          "float_market_capital": 1.125044938614E12,
+          "lot_size": 100,
+          "lock_set": 1,
+          "chg": -2.4,
+          "eps": 0.4169,
+          "last_close": 221.2,
+          "profit_four": 2.4500719867E9,
+          "volume": 8829342,
+          "volume_ratio": 1.29,
+          "profit_forecast": -6.8998536576E9,
+          "turnover_rate": 0.17,
+          "low52w": 59.15,
+          "name": "美团点评-W",
+          "exchange": "HK",
+          "pe_forecast": -186.3789,
+          "total_shares": 5877456071,
+          "status": 1,
+          "code": "03690",
+          "avg_price": 218.316,
+          "percent": -1.08,
+          "psr": 17.108,
+          "amplitude": 2.44,
+          "current": 218.8,
+          "current_year_percent": 114.72,
+          "issue_date": 1537372800000,
+          "sub_type": "256",
+          "low": 215.2,
+          "market_capital": 1.285987388335E12,
+          "shareholder_funds": 1.019992996582E11,
+          "dividend": null,
+          "dividend_yield": null,
+          "currency": "HKD",
+          "navps": 17.3543,
+          "profit": 2.5027198651E9,
+          "timestamp": 1596768468878,
+          "pe_lyr": 513.8359,
+          "amount": 1.927586628E9,
+          "pb": 12.6078,
+          "pe_ttm": 524.8774,
+          "variable_tick_size": "0.001 0.25 0.005 0.5 0.01 10.00 0.02 20.00 0.05 100.00 0.1 200.00 0.2 500.00 0.5 1000.00 1.00 2000.00 2.00 5000.00 5.00",
+          "time": 1596768468878,
+          "open": 218.6
+      },
+      "others": {
+          "pankou_ratio": 62.79,
+          "cyb_switch": false
+      },
+      "tags": [{
+          "description": "港股通",
+          "value": 5
+      }, {
+          "description": "融",
+          "value": 6
+      }, {
+          "description": "空",
+          "value": 7
+      }]
+  },
+  "error_code": 0,
+  "error_description": ""
+}
