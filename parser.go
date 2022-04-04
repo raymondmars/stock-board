@@ -101,7 +101,7 @@ func GetQuoteData(code string, cookies []*http.Cookie) *Data {
 	}{}
 
 	err = json.Unmarshal(body, retData)
-	// fmt.Println(string(body))
+	fmt.Println(string(body))
 	if err != nil {
 		log.Printf("invalid data: %s", string(body))
 		return nil
