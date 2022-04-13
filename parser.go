@@ -101,7 +101,7 @@ func GetQuoteData(code string, cookies []*http.Cookie) *Data {
 	}{}
 
 	err = json.Unmarshal(body, retData)
-	fmt.Println(string(body))
+	// fmt.Println(string(body))
 	if err != nil {
 		log.Printf("invalid data: %s", string(body))
 		return nil
@@ -110,7 +110,7 @@ func GetQuoteData(code string, cookies []*http.Cookie) *Data {
 
 }
 
-//将普通股票代码转换成雪球可以识别的代码
+// 将普通股票代码转换成雪球可以识别的代码
 func _getSymbolCode(code string) string {
 	if len(code) > 5 && code != "SH000001" {
 		firstChar := code[:1]
