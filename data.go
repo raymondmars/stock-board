@@ -3,10 +3,12 @@ package main
 type MarketStatus uint
 
 const (
-	OpenBefore MarketStatus = 2
-	Open       MarketStatus = 5
-	CloseAfter MarketStatus = 6
-	Closed     MarketStatus = 7
+	OpenBefore MarketStatus = 2 //盘前交易
+	Open       MarketStatus = 5 //交易中
+	Middle     MarketStatus = 4 //休盘中
+	CloseAfter MarketStatus = 6 //盘后交易
+	Closed     MarketStatus = 7 //已收盘
+	Rest       MarketStatus = 8 //休市
 )
 
 type Market struct {
